@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
 color:white;
  
@@ -18,7 +20,7 @@ margin:0;
   height: 100px;
   width: 100vw;
   background-color:#926F34;
-font-family: "Imperial Script", cursive;
+  font-family: "Geom", sans-serif;
 }
 
 #nav button{
