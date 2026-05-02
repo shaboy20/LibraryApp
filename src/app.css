@@ -1,0 +1,28 @@
+*{
+color:white;
+ 
+}
+
+body{
+margin:0;
+  background-color: #202A44;
+ font-family: "Alice", serif;
+}
+
+#nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:20px;
+  margin:20;
+  height: 100px;
+  width: 100vw;
+  background-color:#926F34;
+font-family: "Imperial Script", cursive;
+}
+
+#nav button{
+  position: relative;
+  left:20px;
+}
+
