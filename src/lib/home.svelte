@@ -1,4 +1,3 @@
-<div>Home placeholder :D</div>
 <script>
   import { username } from "./library";
 </script>

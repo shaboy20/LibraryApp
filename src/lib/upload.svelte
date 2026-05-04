@@ -1,4 +1,3 @@
-<div>upload some books =D</div>
 <script lang="ts">
   import { username } from "./library";
   let books = [
