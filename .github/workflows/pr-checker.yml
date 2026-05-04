@@ -18,6 +18,6 @@ jobs:
             echo "Valid title. proceed"
           else
             echo "bro READ THE README"
-            echo "Title must start with: major:, feature:, or patch:"
+            echo "Title must start with: release:, feature:, or patch:"
             exit 1
           fi
