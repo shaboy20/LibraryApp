@@ -71,101 +71,100 @@
 </div>
 
 <style>
-  .summary {
-    position: relative;
-    top: 10px;
-  }
-  button {
-    color: white;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    font-size: 16px;
-    width: 80px;
-  }
-
   .book {
+    /* Charter is beautiful, Merriweather is a great backup */
+    font-family: "Charter", "Bitstream Charter", "Sitka Text", "Cambria", serif;
+
+    /* This CSS property is a 'cheat code' to force numbers to line up 
+    if the font supports it (works for many modern serifs) */
+    font-variant-numeric: lining-nums;
+
+    background-color: #1a2a3a;
+    color: white;
+    border: 1px solid #334e68;
+    padding: 24px;
+    margin: 16px auto;
+    border-radius: 12px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-  }
-  .book {
-    border: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
-    border-radius: 8px;
-    max-width: 400px;
-  }
-  .book .author {
-    font-style: italic;
-    position: relative;
-    top: 10px;
-    left: 10px;
+    gap: 15px;
   }
 
   .cover {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  /* Remove those weird relative offsets */
+  .summary,
+  .author,
+  .trader {
+    position: static;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .author {
+    font-style: italic;
+    opacity: 0.9;
+  }
+
+  button {
+    font-family: system-ui, sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .bids {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   ul {
-    list-style-type: none;
-    padding: 0;
-    position: relative;
-    right: 60px;
-    top: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
   }
 
   input {
-    height: 20px;
-    color: white;
-    position: relative;
-    left: 60px;
-    top: 85px;
-    outline: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: transparent;
     border: none;
-    border-radius: 4px;
-    background-color: #203d5b;
-    background-color: transparent;
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    border-bottom: white solid 2px;
-    position: relative;
-    right: 60px;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: system-ui, sans-serif;
+    outline: none;
   }
 
   input::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
   }
 </style>

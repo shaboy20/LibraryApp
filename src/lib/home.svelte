@@ -14,6 +14,7 @@
 </div>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap");
   input {
     font-size: 40px;
     background-color: transparent;
@@ -21,7 +22,7 @@
     outline: none;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.3s ease;
-    font-family: "Tangerine", cursive;
+    font-family: "Geom", sans-serif;
   }
 
   input:hover {
