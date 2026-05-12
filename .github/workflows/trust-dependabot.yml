@@ -20,7 +20,7 @@ jobs:
       # The "Security Clearance" — only auto-merge if it's a patch or minor
       - name: Auto-merge for patches and minor updates
         if: ${{ steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor' }}
-        run: gh pr merge --auto --merge "$PR_URL"
+        run: gh pr squash --auto --merge "$PR_URL"
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
